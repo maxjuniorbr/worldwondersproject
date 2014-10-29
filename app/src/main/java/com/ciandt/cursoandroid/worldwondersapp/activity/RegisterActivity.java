@@ -1,5 +1,6 @@
 package com.ciandt.cursoandroid.worldwondersapp.activity;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,11 @@ public class RegisterActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        //Esconder a barra de ação
+        ActionBar actionBar = getActionBar();
+        actionBar.hide();
+
         setListener();
     }
 
@@ -89,8 +95,8 @@ public class RegisterActivity extends Activity {
         }
 
         if (password != confirm) {
-            editPassword.setError(getResources().getString(R.string.passwordNotEqualConfirm));
-            editConfirm.setError(getResources().getString(R.string.passwordNotEqualConfirm));
+            editPassword.setError(getResources().getString(R.string.passwordDifferentConfirm));
+            editConfirm.setError(getResources().getString(R.string.passwordDifferentConfirm));
         }
 
         if (language.isEmpty()) {

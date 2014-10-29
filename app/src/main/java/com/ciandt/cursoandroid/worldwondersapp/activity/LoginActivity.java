@@ -28,11 +28,11 @@ public class LoginActivity extends Activity {
         String mail = editMail.getText().toString();
         String password = editPassword.getText().toString();
 
-        if(mail.isEmpty()) {
+        if (mail.isEmpty()) {
             editMail.setError(String.format("%1$s %2$s", getResources().getString(R.string.mail), getResources().getString(R.string.invalid)));
         }
 
-        if(password.isEmpty()) {
+        if (password.isEmpty()) {
             editMail.setError(String.format("%1$s %2$s", getResources().getString(R.string.password), getResources().getString(R.string.invalid)));
         }
 

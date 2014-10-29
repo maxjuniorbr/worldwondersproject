@@ -1,8 +1,31 @@
 <resources>
-
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="MainContent" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:background">@color/list_background</item>
+    </style>
+
+    <style name="MainItemContent" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:background">@color/item_list_background</item>
+    </style>
+
+    <style name="MainItemName" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/activity_h1_font_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainItemImageLike" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+
+    <style name="MainItemCountry" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/activity_h3_font_size</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="MainItemImageWorldWonders" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+
+    <style name="MainItemDescription" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/activity_h2_font_size</item>
+    </style>
 </resources>
