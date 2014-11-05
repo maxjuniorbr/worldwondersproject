@@ -2,17 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.ciandt.cursoandroid.worldwondersapp.activity.MainActivity">
     <item
-        android:id="@+id/action_search"
+        android:id="@+id/action_rate"
         android:icon="@drawable/ic_action_rate"
         android:showAsAction="always"
         android:title="@string/rate" />
     <item
-        android:id="@+id/action_compose"
+        android:id="@+id/action_about"
         android:icon="@drawable/ic_action_about"
         android:showAsAction="ifRoom"
         android:title="@string/about" />
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_logout"
         android:orderInCategory="100"
         android:title="@string/logout" />
 </menu>

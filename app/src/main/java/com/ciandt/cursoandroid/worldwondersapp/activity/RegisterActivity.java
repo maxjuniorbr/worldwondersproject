@@ -2,6 +2,7 @@ package com.ciandt.cursoandroid.worldwondersapp.activity;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,10 +11,11 @@ import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.ciandt.cursoandroid.worldwondersapp.R;
+import com.ciandt.cursoandroid.worldwondersapp.entity.User;
 import com.ciandt.cursoandroid.worldwondersapp.infrastructure.Constants;
+import com.ciandt.cursoandroid.worldwondersapp.manager.RegisterManager;
 
 
 public class RegisterActivity extends Activity {
@@ -21,6 +23,13 @@ public class RegisterActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        //Recuperar parâmetros enviados da tela login
+        if (getIntent().hasExtra("email")) {
+            EditText editEmail = (EditText) findViewById(R.id.editEmail);
+            String email = getIntent().getStringExtra("email");
+            editEmail.setText(email);
+        }
 
         //Esconder a barra de ação
         ActionBar actionBar = getActionBar();
@@ -80,33 +89,31 @@ public class RegisterActivity extends Activity {
 
         if (name.isEmpty()) {
             editName.setError(String.format("%1$s %2$s", getResources().getString(R.string.name), getResources().getString(R.string.invalid)));
-        }
-
-        if (mail.isEmpty()) {
+        } else if (mail.isEmpty()) {
             editMail.setError(String.format("%1$s %2$s", getResources().getString(R.string.mail), getResources().getString(R.string.invalid)));
-        }
-
-        if (password.isEmpty()) {
+        } else if (password.isEmpty()) {
             editPassword.setError(String.format("%1$s %2$s", getResources().getString(R.string.password), getResources().getString(R.string.invalid)));
-        }
-
-        if (confirm.isEmpty()) {
+        } else if (confirm.isEmpty()) {
             editConfirm.setError(String.format("%1$s %2$s", getResources().getString(R.string.confirm), getResources().getString(R.string.invalid)));
-        }
-
-        if (password != confirm) {
+        } else if (!password.equals(confirm)) {
             editPassword.setError(getResources().getString(R.string.passwordDifferentConfirm));
             editConfirm.setError(getResources().getString(R.string.passwordDifferentConfirm));
-        }
-
-        if (language.isEmpty()) {
+        } else if (language.isEmpty()) {
             editLanguage.setError(String.format("%1$s %2$s", getResources().getString(R.string.language), getResources().getString(R.string.invalid)));
-        }
-
-        if (groupSex == -1) {
+        } else if (groupSex == -1) {
             //TODO
+        } else {
+            User user = new User();
+            RegisterManager registerManager = new RegisterManager(this);
+            if (registerManager.registerUser(user)) {
+                Intent intent = new Intent(this, RegisterActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("email", mail);
+                bundle.putString("password", password);
+                intent.putExtras(bundle);
+                setResult(Activity.RESULT_OK, intent);
+                finish();
+            }
         }
-
-        Toast.makeText(this, "Sucesso", Toast.LENGTH_SHORT).show();
     }
 }

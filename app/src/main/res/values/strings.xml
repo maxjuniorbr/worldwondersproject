@@ -15,6 +15,7 @@
     <string name="send">Enviar</string>
     <string name="register">Registrar</string>
     <string name="passwordDifferentConfirm">A senha é diferente da confirmação</string>
+    <string name="userOrPassword">Usuário ou senha</string>
     <string name="invalid">Inválido</string>
     <string name="logout">Sair</string>
     <string name="rate">Avaliar</string>
@@ -23,6 +24,7 @@
     <string name="worldWondersMachuPicchu">Machu Picchu</string>
     <string name="lorenIpsum">Machu Picchu (em quíchua Machu Pikchu, "velha montanha"),1 também chamada "cidade perdida dos Incas",2 é uma cidade pré-colombiana bem conservada, localizada no topo de uma montanha, a 2400 metros de altitude, no vale do rio Urubamba, atual Peru.</string>
     <string name="peru">Peru</string>
+    <string name="cancel">Cancelado</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_register">RegisterActivity</string>

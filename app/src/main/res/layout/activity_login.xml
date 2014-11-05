@@ -23,11 +23,14 @@
         android:text="@string/mail" />
 
     <EditText
-        android:id="@+id/editMail"
+        android:id="@+id/editEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:hint="@string/mail" />
+        android:ems="10"
+        android:hint="@string/mail"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
 
     <TextView
         android:id="@+id/textPassword"
@@ -45,7 +48,8 @@
         android:ems="10"
         android:hint="@string/password"
         android:inputType="number"
-        android:password="true" />
+        android:password="true"
+        android:singleLine="true" />
 
     <Button
         android:id="@+id/buttonSend"
