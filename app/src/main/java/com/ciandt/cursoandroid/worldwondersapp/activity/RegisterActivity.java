@@ -8,9 +8,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.ciandt.cursoandroid.worldwondersapp.R;
 import com.ciandt.cursoandroid.worldwondersapp.entity.User;
@@ -71,40 +74,80 @@ public class RegisterActivity extends Activity {
     }
 
     public void buttonRegister(View view) {
+        // Carrega os componentes
         EditText editName = (EditText) findViewById(R.id.editName);
         EditText editMail = (EditText) findViewById(R.id.editEmail);
         EditText editPassword = (EditText) findViewById(R.id.editPassword);
         EditText editConfirm = (EditText) findViewById(R.id.editConfirm);
-        //Spinner spinCountry = (Spinner) findViewById(R.id.spinnerCountry);
+        Spinner spinCountry = (Spinner) findViewById(R.id.spinnerCountry);
         EditText editLanguage = (EditText) findViewById(R.id.autoCompleteLanguage);
         RadioGroup radioGroupSex = (RadioGroup) findViewById(R.id.radioGroupSex);
-        //CheckBox checkNotification = (CheckBox) findViewById(R.id.checkNotification);
+        CheckBox checkNotification = (CheckBox) findViewById(R.id.checkNotification);
 
+        // Carrega os valores dos componentes
         String name = editName.getText().toString();
         String mail = editMail.getText().toString();
         String password = editPassword.getText().toString();
         String confirm = editConfirm.getText().toString();
+        //String country = spinCountry.getSelectedItem().toString();
         String language = editLanguage.getText().toString();
-        int groupSex = radioGroupSex.getCheckedRadioButtonId();
+        Integer groupSex = radioGroupSex.getCheckedRadioButtonId();
 
+        Boolean fieldError = Boolean.FALSE;
+
+        // Validação dos valores recuperados dos componentes
         if (name.isEmpty()) {
-            editName.setError(String.format("%1$s %2$s", getResources().getString(R.string.name), getResources().getString(R.string.invalid)));
-        } else if (mail.isEmpty()) {
-            editMail.setError(String.format("%1$s %2$s", getResources().getString(R.string.mail), getResources().getString(R.string.invalid)));
-        } else if (password.isEmpty()) {
-            editPassword.setError(String.format("%1$s %2$s", getResources().getString(R.string.password), getResources().getString(R.string.invalid)));
-        } else if (confirm.isEmpty()) {
-            editConfirm.setError(String.format("%1$s %2$s", getResources().getString(R.string.confirm), getResources().getString(R.string.invalid)));
-        } else if (!password.equals(confirm)) {
+            editName.setError(String.format("%1$s %2$s", getResources().getString(R.string.name), getResources().getString(R.string.required)));
+            fieldError = Boolean.TRUE;
+        }
+
+        if (mail.isEmpty()) {
+            editMail.setError(String.format("%1$s %2$s", getResources().getString(R.string.mail), getResources().getString(R.string.required)));
+            fieldError = Boolean.TRUE;
+        }
+
+        if (password.isEmpty()) {
+            editPassword.setError(String.format("%1$s %2$s", getResources().getString(R.string.password), getResources().getString(R.string.required)));
+            fieldError = Boolean.TRUE;
+        }
+
+        if (confirm.isEmpty()) {
+            editConfirm.setError(String.format("%1$s %2$s", getResources().getString(R.string.confirm), getResources().getString(R.string.required)));
+            fieldError = Boolean.TRUE;
+        }
+
+        if (!password.equals(confirm)) {
             editPassword.setError(getResources().getString(R.string.passwordDifferentConfirm));
             editConfirm.setError(getResources().getString(R.string.passwordDifferentConfirm));
-        } else if (language.isEmpty()) {
-            editLanguage.setError(String.format("%1$s %2$s", getResources().getString(R.string.language), getResources().getString(R.string.invalid)));
-        } else if (groupSex == -1) {
-            //TODO
-        } else {
+            fieldError = Boolean.TRUE;
+        }
+
+        if (language.isEmpty()) {
+            editLanguage.setError(String.format("%1$s %2$s", getResources().getString(R.string.language), getResources().getString(R.string.required)));
+            fieldError = Boolean.TRUE;
+        }
+
+        if (groupSex == -1) {
+            // TODO
+            // Change do spinner
+            // RadioButton radioFemale = (RadioButton) findViewById(R.id.radioFemale);
+            // radioFemale.setError(String.format("%1$s %2$s", getResources().getString(R.string.sex), getResources().getString(R.string.required)));
+            Toast.makeText(this, String.format("%1$s %2$s", getResources().getString(R.string.sex), getResources().getString(R.string.required)), Toast.LENGTH_SHORT).show();
+            fieldError = Boolean.TRUE;
+        }
+
+        if (!fieldError) {
             User user = new User();
+            user.setUserName(editName.getText().toString());
+            user.setUserEmail(editMail.getText().toString());
+            user.setUserPassword(editPassword.getText().toString());
+            user.setUserCountry(spinCountry.getSelectedItem().toString());
+            user.setUserLanguage(editLanguage.getText().toString());
+            user.setUserGender(((RadioButton) findViewById(groupSex)).getText().toString());
+            user.setUserNotification(checkNotification.isChecked() ? 1 : 0);
+
             RegisterManager registerManager = new RegisterManager(this);
+
             if (registerManager.registerUser(user)) {
                 Intent intent = new Intent(this, RegisterActivity.class);
                 Bundle bundle = new Bundle();

@@ -38,26 +38,34 @@ public class LoginActivity extends Activity {
     }
 
     public void buttonSend(View view) {
-        // Recupera o objeto edittext
+        // Carrega os componentes
         EditText editEmail = (EditText) findViewById(R.id.editEmail);
         EditText editPassword = (EditText) findViewById(R.id.editPassword);
 
-        // Recupera os valores de email e password
+        // Carrega os valores dos componentes
         String email = editEmail.getText().toString();
         String password = editPassword.getText().toString();
 
-        // Valida email e password
+        Boolean fieldError = Boolean.FALSE;
+
+        // Validação dos valores recuperados dos componentes
         if (email.isEmpty()) {
             editEmail.setError(String.format("%1$s %2$s", getResources().getString(R.string.mail), getResources().getString(R.string.invalid)));
-        } else if (password.isEmpty()) {
+            fieldError = Boolean.TRUE;
+        }
+
+        if (password.isEmpty()) {
             editPassword.setError(String.format("%1$s %2$s", getResources().getString(R.string.password), getResources().getString(R.string.invalid)));
-        } else {
+            fieldError = Boolean.TRUE;
+        }
+
+        if(!fieldError) {
             loginUser(email, password);
         }
     }
 
     public void buttonRegister(View view) {
-        // Recupera o objeto edittext
+        // Carrega os componentes
         EditText editEmail = (EditText) findViewById(R.id.editEmail);
         String email = editEmail.getText().toString();
 

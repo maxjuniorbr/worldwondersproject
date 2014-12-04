@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">World Wonders</string>
     <string name="mail">E-mail</string>
     <string name="password">Senha</string>
@@ -17,6 +18,7 @@
     <string name="passwordDifferentConfirm">A senha é diferente da confirmação</string>
     <string name="userOrPassword">Usuário ou senha</string>
     <string name="invalid">Inválido</string>
+    <string name="required">Requerido</string>
     <string name="logout">Sair</string>
     <string name="rate">Avaliar</string>
     <string name="about">Sobre</string>
@@ -25,8 +27,11 @@
     <string name="lorenIpsum">Machu Picchu (em quíchua Machu Pikchu, "velha montanha"),1 também chamada "cidade perdida dos Incas",2 é uma cidade pré-colombiana bem conservada, localizada no topo de uma montanha, a 2400 metros de altitude, no vale do rio Urubamba, atual Peru.</string>
     <string name="peru">Peru</string>
     <string name="cancel">Cancelado</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_place_detail">PlaceDetailActivity</string>
+    <string name="action_settings">Settings</string>
+
 </resources>

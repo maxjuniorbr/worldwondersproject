@@ -1,16 +1,21 @@
 package com.ciandt.cursoandroid.worldwondersapp.activity;
 
 import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.ciandt.cursoandroid.worldwondersapp.R;
+import com.ciandt.cursoandroid.worldwondersapp.entity.Place;
+import com.ciandt.cursoandroid.worldwondersapp.fragment.PlaceDetailFragment;
+import com.ciandt.cursoandroid.worldwondersapp.fragment.PlaceListFragment;
 import com.ciandt.cursoandroid.worldwondersapp.manager.LoginManager;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements PlaceListFragment.OnPlaceSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,17 @@ public class MainActivity extends Activity {
 
         if (!loginManager.isUserLogged()) {
             actionClickLogout();
+        }
+
+        Boolean isTablet = getResources().getBoolean(R.bool.is_tablet);
+
+        if (isTablet) {
+            PlaceDetailFragment placeDetailFragment = new PlaceDetailFragment();
+            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.frame_layout_container_place_detail, placeDetailFragment);
+            fragmentTransaction.commit();
+        } else {
+            findViewById(R.id.frame_layout_container_place_detail).setVisibility(View.GONE);
         }
     }
 
@@ -53,5 +69,22 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    @Override
+    public void onPlaceSelected(Place place) {
+        Boolean isTablet = getResources().getBoolean(R.bool.is_tablet);
+
+        if (isTablet) {
+            PlaceDetailFragment placeDetailFragment = new PlaceDetailFragment().newInstance(place);
+            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout_container_place_detail, placeDetailFragment);
+            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            fragmentTransaction.commit();
+        } else {
+            Intent intent = new Intent(this, PlaceDetailActivity.class);
+            intent.putExtra(PlaceDetailFragment.SELECTED_PLACE, place);
+            startActivity(intent);
+        }
     }
 }
