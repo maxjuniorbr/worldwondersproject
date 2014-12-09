@@ -22,13 +22,6 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textFragItemName" />
 
-    <ImageView
-        android:id="@+id/imageFragLike"
-        style="@style/MainItemImageLike"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/like" />
 
     <TextView
         android:id="@+id/textFragItemDescription"
@@ -36,7 +29,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageFragLike"
         android:paddingTop="@dimen/activity_object_default_padding" />
 
     <ImageView

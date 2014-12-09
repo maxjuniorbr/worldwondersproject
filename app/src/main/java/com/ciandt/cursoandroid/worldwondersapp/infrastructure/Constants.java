@@ -2,6 +2,8 @@ package com.ciandt.cursoandroid.worldwondersapp.infrastructure;
 
 public class Constants {
 
+    public static final String HTTP_PROTOCOL = "http";
+
     public static interface Entity {
 
         public static interface User {
@@ -28,6 +30,17 @@ public class Constants {
         public static final int MAIN_ACTIVITY = 0;
         public static final int LOGIN_ACTIVITY = 1;
         public static final int REGISTER_ACTIVITY = 2;
+    }
+
+    public static interface Integrator {
+
+        public static interface WorldWondersApi {
+
+            //public static final String HOST = "worldwondersapi.apiary-mock.com";
+            public static final String HOST = "private-anon-406b81e0d-worldwondersapi.apiary-mock.com";
+            public static final String WORLD_WONDERS_LIST = "/worldwonders";
+            public static final String PROTOCOL = "http";
+        }
     }
 
 }

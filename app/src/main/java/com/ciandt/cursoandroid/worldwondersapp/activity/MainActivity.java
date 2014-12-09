@@ -2,6 +2,7 @@ package com.ciandt.cursoandroid.worldwondersapp.activity;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,10 +11,15 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.ciandt.cursoandroid.worldwondersapp.R;
+import com.ciandt.cursoandroid.worldwondersapp.database.table.PlaceTable;
 import com.ciandt.cursoandroid.worldwondersapp.entity.Place;
 import com.ciandt.cursoandroid.worldwondersapp.fragment.PlaceDetailFragment;
 import com.ciandt.cursoandroid.worldwondersapp.fragment.PlaceListFragment;
+import com.ciandt.cursoandroid.worldwondersapp.listener.IntegratorOperatorCallback;
 import com.ciandt.cursoandroid.worldwondersapp.manager.LoginManager;
+import com.ciandt.cursoandroid.worldwondersapp.manager.PlaceManager;
+
+import java.util.List;
 
 public class MainActivity extends Activity implements PlaceListFragment.OnPlaceSelectedListener {
 
@@ -36,6 +42,32 @@ public class MainActivity extends Activity implements PlaceListFragment.OnPlaceS
             fragmentTransaction.commit();
         } else {
             findViewById(R.id.frame_layout_container_place_detail).setVisibility(View.GONE);
+        }
+
+        final ContentValues contentValues = new ContentValues();
+
+        PlaceManager placeManager = new PlaceManager();
+        try {
+            placeManager.getAllPlaces(new IntegratorOperatorCallback<List<Place>>() {
+                @Override
+                public void onOperationCompleteSuccess(List<Place> places) {
+                    for (int i = 0; i < places.size(); i++) {
+                        Place place = places.get(i);
+                        android.util.Log.e("Vai trem", place.toString());
+                        contentValues.put(PlaceTable.ID, place.id);
+                        contentValues.put(PlaceTable.PLACE_NAME, place.placeName);
+                        contentValues.put(PlaceTable.PLACE_DESCRIPTION, place.placeDescription);
+                        contentValues.put(PlaceTable.PLACE_COUNTRY, place.placeCountry);
+                        contentValues.put(PlaceTable.PLACE_IMAGE_URL, place.placeImageUrl);
+                    }
+                }
+
+                @Override
+                public void onOperationCompleteError() {
+                }
+            });
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 

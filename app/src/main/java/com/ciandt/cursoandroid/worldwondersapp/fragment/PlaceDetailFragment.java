@@ -68,7 +68,7 @@ public class PlaceDetailFragment extends Fragment {
     private Place loadPlace() {
         Place place = (Place) this.activity.getIntent().getSerializableExtra(SELECTED_PLACE);
         if (place == null) {
-            Bundle bundle = new Bundle();
+            Bundle bundle = getArguments();
             if (bundle != null) {
                 place = (Place) bundle.getSerializable(SELECTED_PLACE);
             }

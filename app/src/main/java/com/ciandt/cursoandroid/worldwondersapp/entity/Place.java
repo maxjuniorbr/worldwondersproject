@@ -4,9 +4,12 @@ import android.database.Cursor;
 
 import com.ciandt.cursoandroid.worldwondersapp.database.table.PlaceTable;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.Serializable;
 
-public class Place implements Serializable {
+public class Place extends BaseEntity implements Serializable {
     public Integer id;
     public String placeName;
     public String placeCountry;
@@ -21,13 +24,18 @@ public class Place implements Serializable {
         this.placeImageUrl = cursor.getString(cursor.getColumnIndex(PlaceTable.PLACE_IMAGE_URL));
     }
 
+    public Place(final JSONObject jsonObject) throws JSONException {
+        this.id = this.getInteger(jsonObject, PlaceTable.JSON_ID);
+        this.placeName = this.getString(jsonObject, PlaceTable.JSON_PLACE_NAME);
+        this.placeCountry = this.getString(jsonObject, PlaceTable.JSON_PLACE_COUNTRY);
+        this.placeDescription = this.getString(jsonObject, PlaceTable.JSON_PLACE_DESCRIPTION);
+        this.placeImageUrl = this.getString(jsonObject, PlaceTable.JSON_PLACE_IMAGE_URL);
+    }
+
     @Override
     public String toString() {
-        return String.format("%1$s = %2$s; %3$s = %4$s; %5$s = %6$s; %7$s = %8$s; %9$s = %10$s;",
-                PlaceTable.ID, this.id.toString(),
-                PlaceTable.PLACE_NAME, this.placeName,
-                PlaceTable.PLACE_COUNTRY, this.placeCountry,
-                PlaceTable.PLACE_DESCRIPTION, this.placeDescription,
-                PlaceTable.PLACE_IMAGE_URL, this.placeImageUrl);
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append(id).append(" ").append(placeName).append(" ").append(placeCountry).append(" ").append(placeDescription).append(" ").append(placeImageUrl);
+        return stringBuffer.toString();
     }
 }
