@@ -1,47 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/MainItemContent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_screen_padding">
+    android:padding="@dimen/activity_screen_padding"
+    tools:context="com.ciandt.cursoandroid.worldwondersapp.fragment.PlaceDetailFragment">
 
     <TextView
-        android:id="@+id/textItemName"
+        android:id="@+id/textFragItemName"
         style="@style/MainItemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="@string/worldWondersMachuPicchu" />
+        android:layout_alignParentTop="true" />
 
     <TextView
-        android:id="@+id/textItemCountry"
+        android:id="@+id/textFragItemCountry"
         style="@style/MainItemCountry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textItemName"
-        android:text="@string/peru" />
-
-    <ImageView
-        android:id="@+id/imageLike"
-        style="@style/MainItemImageLike"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/like" />
+        android:layout_below="@+id/textFragItemName" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/textItemCountry"
+        android:layout_below="@id/textFragItemCountry"
         android:gravity="left"
         android:orientation="horizontal"
         android:paddingTop="@dimen/activity_object_default_padding">
 
         <ImageView
-            android:id="@+id/imageItem"
+            android:id="@+id/imageFragItem"
             style="@style/MainItemImageWorldWonders"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -51,12 +41,13 @@
             android:src="@drawable/machu_picchu" />
 
         <TextView
-            android:id="@+id/textItemDescription"
+            android:id="@+id/textFragItemDescription"
             style="@style/MainItemDescription"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="left"
             android:text="@string/lorenIpsum" />
+
+
     </LinearLayout>
 </RelativeLayout>

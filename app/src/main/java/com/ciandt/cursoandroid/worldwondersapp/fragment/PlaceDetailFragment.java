@@ -2,6 +2,7 @@ package com.ciandt.cursoandroid.worldwondersapp.fragment;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;

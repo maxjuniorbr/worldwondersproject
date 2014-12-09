@@ -1,6 +1,7 @@
 package com.ciandt.cursoandroid.worldwondersapp.activity;
 
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 import com.ciandt.cursoandroid.worldwondersapp.R;

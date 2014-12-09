@@ -39,14 +39,14 @@ public class PlaceCursorAdapter extends CursorAdapter {
         TextView textDescription = (TextView) view.findViewById(R.id.textItemDescription);
         final ProgressBar progressBarImageItem = (ProgressBar) view.findViewById(R.id.progressBarImageItem);
 
-        imageItem.setVisibility(View.INVISIBLE);
-        progressBarImageItem.setVisibility(View.VISIBLE);
+        imageItem.setVisibility(View.GONE);
+        //progressBarImageItem.setVisibility(View.VISIBLE);
 
         UrlImageViewHelper.setUrlDrawable(imageItem, place.placeImageUrl, new UrlImageViewCallback() {
             @Override
             public void onLoaded(ImageView imageView, Bitmap loadedBitmap, String url, boolean loadedFromCache) {
                 imageItem.setVisibility(View.VISIBLE);
-                progressBarImageItem.setVisibility(View.INVISIBLE);
+                //progressBarImageItem.setVisibility(View.GONE);
             }
         });
 

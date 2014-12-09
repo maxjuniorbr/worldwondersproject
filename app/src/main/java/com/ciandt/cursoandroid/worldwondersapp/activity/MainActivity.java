@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -107,16 +108,18 @@ public class MainActivity extends Activity implements PlaceListFragment.OnPlaceS
     public void onPlaceSelected(Place place) {
         Boolean isTablet = getResources().getBoolean(R.bool.is_tablet);
 
-        if (isTablet) {
-            PlaceDetailFragment placeDetailFragment = new PlaceDetailFragment().newInstance(place);
-            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frame_layout_container_place_detail, placeDetailFragment);
-            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-            fragmentTransaction.commit();
-        } else {
-            Intent intent = new Intent(this, PlaceDetailActivity.class);
-            intent.putExtra(PlaceDetailFragment.SELECTED_PLACE, place);
-            startActivity(intent);
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            if (isTablet) {
+                PlaceDetailFragment placeDetailFragment = new PlaceDetailFragment().newInstance(place);
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.frame_layout_container_place_detail, placeDetailFragment);
+                fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                fragmentTransaction.commit();
+            } else {
+                Intent intent = new Intent(this, PlaceDetailActivity.class);
+                intent.putExtra(PlaceDetailFragment.SELECTED_PLACE, place);
+                startActivity(intent);
+            }
         }
     }
 }

@@ -20,8 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="@string/worldWondersMachuPicchu" />
+        android:layout_alignParentTop="true" />
 
     <TextView
         android:id="@+id/textItemCountry"
@@ -29,8 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textItemName"
-        android:text="@string/peru" />
+        android:layout_below="@+id/textItemName" />
 
     <ImageView
         android:id="@+id/imageLike"
@@ -48,15 +46,15 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/imageLike"
         android:paddingTop="@dimen/activity_object_default_padding"
-        android:text="@string/lorenIpsum" />
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/imageItem"
         style="@style/MainItemImageWorldWonders"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textItemDescription"
-        android:paddingTop="@dimen/activity_object_default_padding"
-        android:src="@drawable/machu_picchu" />
+        android:adjustViewBounds="true"
+        android:paddingTop="@dimen/activity_object_default_padding" />
 </RelativeLayout>

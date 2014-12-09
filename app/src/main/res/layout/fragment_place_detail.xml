@@ -22,22 +22,23 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textFragItemName" />
 
-
     <TextView
         android:id="@+id/textFragItemDescription"
         style="@style/MainItemDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/textFragItemCountry"
         android:paddingTop="@dimen/activity_object_default_padding" />
 
     <ImageView
         android:id="@+id/imageFragItem"
         style="@style/MainItemImageWorldWonders"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/textFragItemDescription"
-        android:paddingTop="@dimen/activity_object_default_padding" />
+        android:adjustViewBounds="true"
+        android:paddingTop="@dimen/activity_object_default_padding"
+        android:scaleType="fitCenter" />
 
 </RelativeLayout>

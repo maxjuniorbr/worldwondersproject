@@ -1,10 +1,17 @@
 package com.ciandt.cursoandroid.worldwondersapp.database;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.net.Uri;
+import android.os.AsyncTask;
 
 import com.ciandt.cursoandroid.worldwondersapp.database.table.PlaceTable;
+import com.ciandt.cursoandroid.worldwondersapp.entity.Place;
+import com.ciandt.cursoandroid.worldwondersapp.listener.DatabaseOperatorCallback;
+
+import java.util.List;
 
 public class Database extends SQLiteOpenHelper {
     private static String databaseName = "worldwonders.db";
@@ -45,6 +52,26 @@ public class Database extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i2) {
+    }
 
+    public void bulkInsert(final Uri uri,
+                           final ContentValues[] contentValues,
+                           final boolean deleteBeforeInsert,
+                           final String deleteSelecion,
+                           final String[] deleteSelectionArgs,
+                           final DatabaseOperatorCallback<Integer> integerDatabaseOperatorCallback) {
+        new AsyncTask<Void, Void, List<Place>>() {
+
+            @Override
+            protected List<Place> doInBackground(Void... voids) {
+                //ContentResolver contentResolver = context.getContentResolver();
+
+                if (deleteBeforeInsert) {
+
+                }
+
+                return null;
+            }
+        }.execute();
     }
 }

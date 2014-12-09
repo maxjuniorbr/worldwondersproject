@@ -59,7 +59,7 @@ public class LoginActivity extends Activity {
             fieldError = Boolean.TRUE;
         }
 
-        if(!fieldError) {
+        if (!fieldError) {
             loginUser(email, password);
         }
     }
@@ -97,7 +97,7 @@ public class LoginActivity extends Activity {
                     loginUser(email, password);
                 }
             }
-        // Caso o usuário pressione o back mostra o toast cancelado
+            // Caso o usuário pressione o back mostra o toast cancelado
         } else if (resultCode == Activity.RESULT_CANCELED) {
             Toast.makeText(this, getResources().getString(R.string.cancel), Toast.LENGTH_SHORT).show();
         }
