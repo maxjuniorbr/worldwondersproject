@@ -72,95 +72,7 @@
     <favorites_list name="WorldWondersProject" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="748">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="e#976#994#0" expanded="true" />
-                <element signature="e#1567#1585#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlaceCursorAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/adapter/PlaceCursorAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="799">
-              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-              <folding>
-                <element signature="e#1831#2139#0" expanded="true" />
-                <element signature="e#2128#2129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/activity/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.98141265" vertical-offset="1283" max-vertical-offset="1887">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_place_detail.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/fragment_place_detail.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.259259" vertical-offset="460" max-vertical-offset="1003">
-              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-              <folding>
-                <element signature="e#262#294#0" expanded="true" />
-                <element signature="e#1217#1257#0" expanded="true" />
-                <element signature="e#1587#1627#0" expanded="true" />
-                <element signature="e#1959#1979#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_feed_item.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/main_feed_item.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.148149" vertical-offset="545" max-vertical-offset="1139">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
-              <folding>
-                <element signature="e#251#283#0" expanded="true" />
-                <element signature="e#577#610#0" expanded="true" />
-                <element signature="e#916#930#0" expanded="true" />
-                <element signature="e#1461#1501#0" expanded="true" />
-                <element signature="e#1827#1867#0" expanded="true" />
-                <element signature="e#2230#2250#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_feed_item.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_feed_item.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.4814816" vertical-offset="562" max-vertical-offset="1105">
-              <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -872,6 +784,11 @@
                 <option name="name" value="preReleaseBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:20.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportSupportV42000Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
@@ -959,7 +876,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4250847366666" />
+        <entry key="$PROJECT_DIR$" value="4252229183934" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1115,6 +1032,10 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/0.12.2/3673e1c415b054caccc3231dcdff959cfcb315f6/builder-0.12.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.koushikdutta.urlimageviewhelper/urlimageviewhelper/1.0.4/29765e36c3f30b495b7f0c91f8591573feb470d3/urlimageviewhelper-1.0.4-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.koushikdutta.urlimageviewhelper/urlimageviewhelper/1.0.4/67125d743e0035a1b157ba8210c2abf1ff374e10/urlimageviewhelper-1.0.4.jar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/android-sdk/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0-sources.jar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/android-sdk/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/android-sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0-sources.jar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/android-sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/app" />
@@ -1228,14 +1149,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/RegisterManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/LoginManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/entity/User.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/activity/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/activity/RegisterActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_place_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/boolean.xml" />
@@ -1251,20 +1168,27 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/database/table/PlaceTable.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/PlaceManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/infrastructure/Constants.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/infrastructure/NetworkUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/database/Database.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/service/syncer/Syncer.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_place_detail.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/contentprovider/WorldWondersContentProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_place_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main_feed_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/activity/PlaceDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/fragment/PlaceDetailFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-land/fragment_place_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-land/main_feed_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/adapter/PlaceCursorAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/service/syncer/Syncer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/service/syncer/SyncService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/database/Database.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/DatabaseManager.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/infrastructure/NetworkUtil.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/contentprovider/WorldWondersContentProvider.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/service/syncer/PlaceSyncer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/service/SyncService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
       </list>
     </option>
   </component>
@@ -1272,10 +1196,33 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="754" />
+    <option name="width" value="1366" />
+    <option name="height" value="738" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Java language level migration aids</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AndroidLintExportedContentProvider</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1303,7 +1250,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1414,6 +1360,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="worldwondersproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="worldwondersproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layout-land" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1470,6 +1446,108 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-hdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="worldwondersproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="worldwondersproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="worldwondersapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="worldwondersproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="worldwondersproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="worldwondersapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="syncer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="worldwondersproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="worldwondersproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1508,7 +1586,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1566,8 +1644,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1577,14 +1656,14 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="preferences.JavaFX" />
+    <property name="options.lastSelected" value="preferences.updates" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="recentsLimit" value="5" />
-    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="05cedfa5f0ddbae7" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -1807,27 +1886,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="738" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40015128" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33277592" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36789298" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22685888" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37800688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33277592" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5033445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21623673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21822359" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33277592" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1841,6 +1920,38 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="554" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40015128" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33277592" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39632106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="554" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22685888" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36789298" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33277592" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21623673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33277592" sideWeight="0.5" order="15" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1860,83 +1971,27 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/DatabaseManager.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/service/SyncService.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="35" />
+      <option name="time" value="49" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/LoginManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="646">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7894737" vertical-offset="0" max-vertical-offset="1224">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-w820dp_/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="595">
-          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/RegisterManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18328841" vertical-offset="51" max-vertical-offset="425">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18328841" vertical-offset="0" max-vertical-offset="371">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37988827" vertical-offset="0" max-vertical-offset="646">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/android-sdk/platforms/android-20/android.jar!/android/app/Fragment.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33125" vertical-offset="1662" max-vertical-offset="2975">
-          <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/android-sdk/platforms/android-20/android.jar!/android/widget/AdapterView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33125" vertical-offset="251" max-vertical-offset="2193">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/fragment/PlaceListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1006" max-vertical-offset="1326">
-          <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/entity/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1491228" vertical-offset="0" max-vertical-offset="867">
@@ -1963,7 +2018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47719297" vertical-offset="697" max-vertical-offset="1717">
           <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1987,7 +2041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15260324" vertical-offset="0" max-vertical-offset="1751">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1995,43 +2048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33125" vertical-offset="948" max-vertical-offset="7565">
           <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/android-sdk/platforms/android-20/android.jar!/android/os/AsyncTask.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4375" vertical-offset="285" max-vertical-offset="952">
-          <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/activity/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.14166667" vertical-offset="816" max-vertical-offset="2516">
-          <caret line="65" column="81" selection-start-line="65" selection-start-column="81" selection-end-line="65" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/infrastructure/NetworkUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45576409" vertical-offset="0" max-vertical-offset="391">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/infrastructure/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5013405" vertical-offset="306" max-vertical-offset="816">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="58" />
-          <folding>
-            <element signature="class#WorldWondersApi#0;class#Integrator#0;class#Constants#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2039,7 +2055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27345845" vertical-offset="0" max-vertical-offset="373">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2047,15 +2062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17962466" vertical-offset="35" max-vertical-offset="510">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/PlaceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14166667" vertical-offset="51" max-vertical-offset="833">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2063,26 +2069,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12064343" vertical-offset="23" max-vertical-offset="867">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3462247" vertical-offset="0" max-vertical-offset="2771">
           <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/database/table/PlaceTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05964912" vertical-offset="102" max-vertical-offset="697">
           <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2090,18 +2094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11490126" vertical-offset="55" max-vertical-offset="680">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/database/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16491228" vertical-offset="127" max-vertical-offset="1190">
-          <caret line="27" column="54" selection-start-line="27" selection-start-column="2" selection-end-line="50" selection-end-column="41" />
-          <folding>
-            <element signature="e#3048#3377#0" expanded="false" />
-            <element signature="e#3366#3367#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2109,7 +2101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4530831" vertical-offset="103" max-vertical-offset="476">
           <caret line="23" column="33" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2117,101 +2108,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22788204" vertical-offset="0" max-vertical-offset="425">
           <caret line="5" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3538874" vertical-offset="123" max-vertical-offset="527">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3130755" vertical-offset="0" max-vertical-offset="543">
           <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_place_list.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_place_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.4074073" vertical-offset="0" max-vertical-offset="340">
           <caret line="7" column="33" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="33" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_place_detail.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/service/syncer/Syncer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4631579" vertical-offset="110" max-vertical-offset="680">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/contentprovider/WorldWondersContentProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.062836625" vertical-offset="2039" max-vertical-offset="5185">
-          <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_place_detail.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4214876" vertical-offset="0" max-vertical-offset="242">
           <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/integrator/PlaceIntegrator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35789475" vertical-offset="0" max-vertical-offset="570">
           <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_place_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8139963" vertical-offset="238" max-vertical-offset="850">
           <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/activity/PlaceDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26842105" vertical-offset="0" max-vertical-offset="570">
           <caret line="13" column="55" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22077923" vertical-offset="0" max-vertical-offset="731">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2220,17 +2174,6 @@
         <state vertical-scroll-proportion="0.38958707" vertical-offset="293" max-vertical-offset="1207">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="748">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#976#994#0" expanded="true" />
-            <element signature="e#1567#1585#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2243,66 +2186,229 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/fragment_place_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.259259" vertical-offset="460" max-vertical-offset="1003">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding>
-            <element signature="e#262#294#0" expanded="true" />
-            <element signature="e#1217#1257#0" expanded="true" />
-            <element signature="e#1587#1627#0" expanded="true" />
-            <element signature="e#1959#1979#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6983471" vertical-offset="460" max-vertical-offset="1003">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main_feed_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4814816" vertical-offset="562" max-vertical-offset="1105">
+        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1105">
           <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/main_feed_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.148149" vertical-offset="545" max-vertical-offset="1139">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
-          <folding>
-            <element signature="e#251#283#0" expanded="true" />
-            <element signature="e#577#610#0" expanded="true" />
-            <element signature="e#916#930#0" expanded="true" />
-            <element signature="e#1461#1501#0" expanded="true" />
-            <element signature="e#1827#1867#0" expanded="true" />
-            <element signature="e#2230#2250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90909094" vertical-offset="545" max-vertical-offset="1139">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/adapter/PlaceCursorAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="799">
           <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/android-sdk/platforms/android-20/android.jar!/android/content/ContentResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33213645" vertical-offset="1005" max-vertical-offset="2771">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/PlaceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="833">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/android-sdk/platforms/android-20/android.jar!/android/os/ResultReceiver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36857143" vertical-offset="41" max-vertical-offset="391">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/database/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.99714285" vertical-offset="263" max-vertical-offset="833">
+          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/activity/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1807" max-vertical-offset="2516">
+          <caret line="134" column="173" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/service/syncer/Syncer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24285714" vertical-offset="0" max-vertical-offset="350">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/android-sdk/platforms/android-20/android.jar!/android/os/AsyncTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/android-sdk/platforms/android-21/data/res/drawable-ldpi/ic_dialog_info.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values-v21/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6018">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/android-sdk/platforms/android-20/android.jar!/android/content/ContextWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2206" max-vertical-offset="3281">
+          <caret line="137" column="41" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="483" max-vertical-offset="833">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/infrastructure/NetworkUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36857143" vertical-offset="24" max-vertical-offset="374">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/contentprovider/WorldWondersContentProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4130" max-vertical-offset="5083">
+          <caret line="262" column="21" selection-start-line="262" selection-start-column="21" selection-end-line="262" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/infrastructure/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="986">
+          <caret line="42" column="60" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
           <folding>
-            <element signature="e#1831#2139#0" expanded="true" />
-            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="class#WorldWondersApi#0;class#Integrator#0;class#Constants#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/manager/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="535" max-vertical-offset="918">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/service/SyncService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13213213" vertical-offset="143" max-vertical-offset="476">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="e#685#737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/service/syncer/PlaceSyncer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.051051" vertical-offset="7" max-vertical-offset="1156">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43714285" vertical-offset="0" max-vertical-offset="408">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6" vertical-offset="464" max-vertical-offset="799">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/android-sdk/platforms/android-20/data/res/drawable-hdpi/ic_dialog_info.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75714284" vertical-offset="296" max-vertical-offset="714">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ciandt/cursoandroid/worldwondersapp/activity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.98141265" vertical-offset="1283" max-vertical-offset="1887">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.58" vertical-offset="1310" max-vertical-offset="2975">
+          <caret line="89" column="124" selection-start-line="89" selection-start-column="124" selection-end-line="89" selection-end-column="124" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#3976#3993#0" expanded="true" />
+            <element signature="e#4027#4056#0" expanded="true" />
+            <element signature="e#4097#4125#0" expanded="true" />
+            <element signature="e#4440#4462#0" expanded="true" />
+            <element signature="e#5742#5759#0" expanded="true" />
+            <element signature="e#5856#5871#0" expanded="true" />
+            <element signature="e#5893#6141#0" expanded="true" />
+            <element signature="e#6118#6119#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

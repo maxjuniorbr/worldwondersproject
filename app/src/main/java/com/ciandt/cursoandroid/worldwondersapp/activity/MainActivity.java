@@ -1,28 +1,34 @@
 package com.ciandt.cursoandroid.worldwondersapp.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.FragmentTransaction;
-import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.ResultReceiver;
+import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.ciandt.cursoandroid.worldwondersapp.R;
-import com.ciandt.cursoandroid.worldwondersapp.database.table.PlaceTable;
 import com.ciandt.cursoandroid.worldwondersapp.entity.Place;
 import com.ciandt.cursoandroid.worldwondersapp.fragment.PlaceDetailFragment;
 import com.ciandt.cursoandroid.worldwondersapp.fragment.PlaceListFragment;
-import com.ciandt.cursoandroid.worldwondersapp.listener.IntegratorOperatorCallback;
+import com.ciandt.cursoandroid.worldwondersapp.infrastructure.Constants;
 import com.ciandt.cursoandroid.worldwondersapp.manager.LoginManager;
-import com.ciandt.cursoandroid.worldwondersapp.manager.PlaceManager;
-
-import java.util.List;
+import com.ciandt.cursoandroid.worldwondersapp.service.SyncService;
 
 public class MainActivity extends Activity implements PlaceListFragment.OnPlaceSelectedListener {
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,30 +51,62 @@ public class MainActivity extends Activity implements PlaceListFragment.OnPlaceS
             findViewById(R.id.frame_layout_container_place_detail).setVisibility(View.GONE);
         }
 
-        final ContentValues contentValues = new ContentValues();
+        final Intent intent = new Intent(this, SyncService.class);
+        Bundle bundle = new Bundle();
+        bundle.putParcelable(Constants.Service.Tag.RESULT_RECEIVER, new ResultReceiver(new Handler()) {
+            @Override
+            protected void onReceiveResult(int resultCode, Bundle resultData) {
+                if (Constants.Service.Status.FINISHED == resultCode) {
+                    /*
+                    NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this);
+                    notificationBuilder.setAutoCancel(true);
+                    notificationBuilder.setTicker(getResources().getString(R.string.notification));
+                    notificationBuilder.setSmallIcon(R.drawable.ic_launcher_app);
+                    notificationBuilder.setContentTitle(getResources().getString(R.string.notification));
+                    notificationBuilder.setContentText(getResources().getString(R.string.notification));
 
-        PlaceManager placeManager = new PlaceManager();
-        try {
-            placeManager.getAllPlaces(new IntegratorOperatorCallback<List<Place>>() {
-                @Override
-                public void onOperationCompleteSuccess(List<Place> places) {
-                    for (int i = 0; i < places.size(); i++) {
-                        Place place = places.get(i);
-                        android.util.Log.e("Vai trem", place.toString());
-                        contentValues.put(PlaceTable.ID, place.id);
-                        contentValues.put(PlaceTable.PLACE_NAME, place.placeName);
-                        contentValues.put(PlaceTable.PLACE_DESCRIPTION, place.placeDescription);
-                        contentValues.put(PlaceTable.PLACE_COUNTRY, place.placeCountry);
-                        contentValues.put(PlaceTable.PLACE_IMAGE_URL, place.placeImageUrl);
-                    }
-                }
+                    PendingIntent pendingIntent = PendingIntent.getActivity(MainActivity.this,
+                            0,
+                            intent,
+                            PendingIntent.FLAG_UPDATE_CURRENT);
 
-                @Override
-                public void onOperationCompleteError() {
+                    notificationBuilder.setContentIntent(pendingIntent);
+
+                    int notificationId = 001;
+
+                    NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+                    */
+
+
+                } else if (Constants.Service.Status.ERROR == resultCode) {
+
                 }
-            });
-        } catch (Exception ex) {
-            ex.printStackTrace();
+            }
+        });
+        intent.putExtras(bundle);
+
+        if (savedInstanceState == null) {
+            // Dialog para confirmar o sync
+            AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom));
+            builder.setIcon(android.R.drawable.ic_dialog_info);
+            builder.setTitle(R.string.app_name);
+            builder.setMessage(R.string.confirmation_message);
+            builder.setPositiveButton(R.string.confirmation_button,
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            startService(intent);
+                        }
+                    });
+            builder.setNegativeButton(R.string.cancel_button,
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            return;
+                        }
+                    });
+            AlertDialog dialog = builder.create();
+            dialog.show();
         }
     }
 
@@ -87,6 +125,22 @@ public class MainActivity extends Activity implements PlaceListFragment.OnPlaceS
         int id = item.getItemId();
         if (id == R.id.action_logout) {
             actionClickLogout();
+        } else if (id == R.id.action_about) {
+            // Dialog para confirmar o sync
+            AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom));
+            builder.setIcon(android.R.drawable.ic_dialog_info);
+            builder.setTitle(R.string.app_name);
+            builder.setMessage(R.string.about_message);
+
+            builder.setNeutralButton(R.string.logout,
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+            AlertDialog dialog = builder.create();
+            dialog.show();
         } else if (id == R.id.action_rate) {
             Intent intent = new Intent(Intent.ACTION_VIEW);
             String uriString = "market://details?id=com.ciandt.cursoandroid.worldwondersapp";

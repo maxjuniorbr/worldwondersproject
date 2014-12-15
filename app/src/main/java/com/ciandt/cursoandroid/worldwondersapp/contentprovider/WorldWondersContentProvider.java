@@ -263,24 +263,20 @@ public class WorldWondersContentProvider extends ContentProvider {
     public final int bulkInsert(Uri uri, ContentValues[] contValues) {
 
         SQLiteDatabase dbConnection = database.getWritableDatabase();
-        String table = null;
+        String table;
         int insertCount = 0;
 
         try {
-
             dbConnection.beginTransaction();
-
             int matchUri = URI_MATCHER.match(uri);
 
             // delete table
             switch (matchUri) {
-
                 case PLACE_DIR:
                 case PLACE_ID:
                     table = PlaceTable.TABLE_NAME;
                     dbConnection.delete(table, null, null);
                     break;
-
                 default:
                     throw new IllegalArgumentException("Unsupported URI: " + uri);
             }
@@ -293,13 +289,11 @@ public class WorldWondersContentProvider extends ContentProvider {
 
             // notify the UI when necessary
             switch (matchUri) {
-
                 case PLACE_DIR:
                 case PLACE_ID:
                     dbConnection.setTransactionSuccessful();
                     getContext().getContentResolver().notifyChange(uri, null);
                     break;
-
                 default:
                     throw new IllegalArgumentException("Unsupported URI: " + uri);
             }

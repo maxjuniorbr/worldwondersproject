@@ -17,16 +17,20 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MainItemImageLike" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+    <style name="MainItemImageLike" parent="android:Theme.Holo.Light.DarkActionBar"/>
 
     <style name="MainItemCountry" parent="android:Theme.Holo.Light.DarkActionBar">
         <item name="android:textSize">@dimen/activity_h3_font_size</item>
         <item name="android:textStyle">italic</item>
     </style>
 
-    <style name="MainItemImageWorldWonders" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+    <style name="MainItemImageWorldWonders" parent="android:Theme.Holo.Light.DarkActionBar"/>
 
     <style name="MainItemDescription" parent="android:Theme.Holo.Light.DarkActionBar">
         <item name="android:textSize">@dimen/activity_h2_font_size</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="android:style/Theme.Dialog">
+        <item name="android:colorBackground">#333333</item>
     </style>
 </resources>
